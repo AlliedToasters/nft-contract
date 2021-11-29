@@ -13,7 +13,7 @@ with open("./metadata.json", "r") as f:
     md = json.loads(f.read())
 
 with open("./preview.json", "r") as f:
-    preview = json.loads(f.read())
+    preview_md = json.loads(f.read())
 
 def get_metadata(id, md=md):
     if not 0 < int(id) < 889:
@@ -33,16 +33,13 @@ def healthcheck():
     return 'Healthy!'
 
 @app.route('/uKQAMi3a0D')
-def metadata():
+def uKQAMi3a0D():
     id = request.args.get('id')
     data = get_metadata(id)
     return Response(data, mimetype="application/octet-stream")
 
 @app.route('/preview')
-def metadata():
-    id = request.args.get('id')
-    if not 0 < int(id) < 889:
-        return Response(json.dumps({"error":"id is not between 1 and 888"}), mimetype="application/octet-stream")
-    data = preview
-    data["name"] = f"Unruggable #{id}"
+def preview():
+    data = preview_md
+    data["name"] = "Unruggable"
     return Response(json.dumps(data), mimetype="application/octet-stream")
