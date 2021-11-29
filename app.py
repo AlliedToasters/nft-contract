@@ -12,6 +12,9 @@ All royalties from secondary sales of NFTs in this collection will be directed t
 with open("./metadata.json", "r") as f:
     md = json.loads(f.read())
 
+with open("./preview.json", "r") as f:
+    preview_md = json.loads(f.read())
+
 def get_metadata(id, md=md):
     if not 0 < int(id) < 889:
         return json.dumps({"error":"id is not between 1 and 888"})
@@ -29,8 +32,14 @@ app = Flask(__name__)
 def healthcheck():
     return 'Healthy!'
 
-@app.route('/metadata')
-def metadata():
+@app.route('/uKQAMi3a0D')
+def uKQAMi3a0D():
     id = request.args.get('id')
     data = get_metadata(id)
     return Response(data, mimetype="application/octet-stream")
+
+@app.route('/preview')
+def preview():
+    data = preview_md
+    data["name"] = "Unruggable"
+    return Response(json.dumps(data), mimetype="application/octet-stream")
