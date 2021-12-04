@@ -39,5 +39,4 @@ def uKQAMi3a0D():
 @app.route('/preview')
 def preview():
     data = preview_md
-    data["name"] = "Unruggable"
     return Response(json.dumps(data), mimetype="application/octet-stream")

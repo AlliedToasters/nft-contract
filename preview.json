@@ -1,1 +1,29 @@
-{"metadata": {"description": "The Unruggables Phoenix Punks is the first NFT collection of the $WGMI Community Token (ERC20 on the Ethereum Blockchain). \n The collection consist of 888 unique Phoenix Punks. We felt that the Phoenix represent how we came from the ashes as a community after the token was originally ruggued by the creator.  \n Royalties from secondary sales of the Phoenix Punks NFT's will buy $WGMI token from Uniswap and deposit Liquidity into the ETH/WGMI pair that will be locked forever.", "external_url": "https://www.wgmi-takeover.com/", "image": "https://our_image_host/1", "name": "", "attributes": [{"trait_type": "Background", "value": "White"}, {"trait_type": "Unruggable", "value": "Yes"}, {"trait_type": "Race", "value": "Phoenix"}, {"trait_type": "Tail", "value": "Male"}, {"trait_type": "Wing", "value": "Regular Wings"}, {"trait_type": "WGMI", "value": "Yes"}]}}
+{"metadata": 
+    {
+        "description": "The Unruggables is the first NFT collection made by the $WGMI (ERC-20) community. \n The collection consists of 888 unique Unruggable phoenixes, which represent how we, as a community, rose from the ashes after the token was initially rugged by its creator.  \n All royalties from secondary sales of NFTs in this collection will be directed towards supplying liquidity for the $WGMI token, via purchasing ETH/WGMI LP tokens and locking that liquidity away forever by burning those LP tokens.", 
+        "external_url": "https://www.wgmi-takeover.com/", 
+        "image": "https://i.ibb.co/N1jX58g/preview.gif",
+        "name": "Unruggable", 
+        "attributes": 
+        [
+            {
+                "trait_type": "Background", "value": "Unrevealed"
+            },
+            {
+                "trait_type": "Unruggable", "value": "Unrevealed"
+            }, 
+            {
+                "trait_type": "Race", "value": "Unrevealed"
+            },
+            {
+                "trait_type": "Tail", "value": "Unrevealed"
+            }, 
+            {
+                "trait_type": "Wing", "value": "Unrevealed"
+            }, 
+            {
+                "trait_type": "WGMI", "value": "Unrevealed"
+            }
+        ]
+    }
+}
